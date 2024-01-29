@@ -17,7 +17,7 @@
         <th>Status</th>
     </tr>
     <?php foreach ($students as $student): ?>
-    <tr>
+    <tr  <?php if($student['status'] == 'PHP') echo 'style="color:red;"'; ?>>
         <td><?= $student['name'] ?></td>
         <td><?= $student['email'] ?></td>
         <td><?= $student['status'] ?></td> 
